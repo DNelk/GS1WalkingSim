@@ -8,6 +8,7 @@ ModelImporter:
     400000: //RootNode
     400002: Fence_Post
     2100000: Default_Prototype
+    2100002: Fence_PostMat
     2300000: Fence_Post
     3300000: Fence_Post
     4300000: Fence_Post
