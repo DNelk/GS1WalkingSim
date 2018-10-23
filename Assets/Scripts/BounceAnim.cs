@@ -21,11 +21,11 @@ public class BounceAnim : MonoBehaviour
 	{
 		Debug.Log("Initial:" + initialPos.y + "Current:" + transform.position.y);
 		if (rising)
-			transform.DOMoveY(initialPos.y + 1.0f, d, false).OnComplete(SetRise);
+			transform.DOMoveY(initialPos.y + 1.0f, d, false).OnComplete(SetRise); //going up
 		else
-			transform.DOMoveY(initialPos.y, d, false).OnComplete(SetRise);
+			transform.DOMoveY(initialPos.y, d, false).OnComplete(SetRise); //going down
 	}
-
+	//Change from going up to down
 	void SetRise()
 	{
 		rising = !rising;
