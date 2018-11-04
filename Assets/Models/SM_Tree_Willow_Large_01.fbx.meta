@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 68f6acafc1d99ae439e47c2551b4e002
+guid: 28655d37af701384da147facb0f2dbf2
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: SM_Tree_Willow_Large_01_Leaves
     400000: //RootNode
-    2100000: Bark
-    2100002: Leaves2
-    2100004: Leaves3
+    400002: SM_Tree_Willow_Large_01_Leaves
+    2100000: lambert22
     2300000: //RootNode
+    2300002: SM_Tree_Willow_Large_01_Leaves
     3300000: //RootNode
-    4300000: Cylinder_003
-    7400000: Default Take
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+    3300002: SM_Tree_Willow_Large_01_Leaves
+    4300000: SM_Tree_Willow_Large_01
+    4300002: SM_Tree_Willow_Large_01_Leaves
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -66,7 +66,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -91,7 +91,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
