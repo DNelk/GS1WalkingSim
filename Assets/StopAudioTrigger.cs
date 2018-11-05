@@ -7,7 +7,7 @@ public class StopAudioTrigger : MonoBehaviour
 {
 	public AudioSource source; //clip to stop
 
-	private float d = 0.0f; //duration
+	public float duration = 0.5f; //duration
 	// Use this for initialization
 	void Start () {
 	}
@@ -19,10 +19,20 @@ public class StopAudioTrigger : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
-		Renderer renderer = GetComponent<Renderer>();
-		renderer.material.color = Color.green;
-		Debug.Log(source.isPlaying);
-		if(source.isPlaying)
-			source.Stop();
+		if (source.isPlaying)
+		{
+			source.DOFade(0.0f, duration).OnComplete(ResetAudio);
+		}
+		else
+		{
+			source.Play();
+			source.DOFade(1.0f, duration);
+		}
+			
+	}
+
+	private void ResetAudio()
+	{
+		source.Stop();
 	}
 }
