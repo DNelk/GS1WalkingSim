@@ -9,7 +9,7 @@ public class BounceAnim : MonoBehaviour
 
 	private bool rising;
 
-	private float d = 0.1f;
+	private float d = 0.1f; //duration
 	// Use this for initialization
 	void Start () {
 		initialPos = transform.position;
@@ -21,7 +21,7 @@ public class BounceAnim : MonoBehaviour
 	{
 		//Debug.Log("Initial:" + initialPos.y + "Current:" + transform.position.y);
 		if (rising)
-			transform.DOMoveY(initialPos.y + 1.0f, d, false).OnComplete(SetRise); //going up
+			transform.DOMoveY(initialPos.y + 0.5f, d, false).OnComplete(SetRise); //going up
 		else
 			transform.DOMoveY(initialPos.y, d, false).OnComplete(SetRise); //going down
 	}
