@@ -19,7 +19,7 @@ public class BounceAnim : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		Debug.Log("Initial:" + initialPos.y + "Current:" + transform.position.y);
+		//Debug.Log("Initial:" + initialPos.y + "Current:" + transform.position.y);
 		if (rising)
 			transform.DOMoveY(initialPos.y + 1.0f, d, false).OnComplete(SetRise); //going up
 		else
